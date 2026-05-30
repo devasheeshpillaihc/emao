@@ -211,6 +211,6 @@ class NotificationParser @Inject constructor() : TransactionParser {
      * Check if a notification should be monitored.
      */
     fun shouldMonitor(packageName: String): Boolean {
-        return MONITORED_PACKAGES.any { packageName.contains(it, ignoreCase = true) }
+        return packageName in MONITORED_PACKAGES
     }
 }

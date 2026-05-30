@@ -15,7 +15,7 @@ object SmsBankPatterns {
     // ── Amount Patterns ──
     // Matches: Rs.1234.56, Rs 1,234.56, INR 1234, ₹1,234.00, Rs1234
     val AMOUNT_PATTERN = Regex(
-        """(?:Rs\.?|INR|₹)\s*([0-9]{1,3}(?:,?[0-9]{3})*(?:\.[0-9]{1,2})?)""",
+        """(?:Rs\.?|INR|₹)\s*([0-9]{1,3}(?:,[0-9]{2,3})*(?:\.[0-9]{1,2})?)""",
         RegexOption.IGNORE_CASE
     )
 

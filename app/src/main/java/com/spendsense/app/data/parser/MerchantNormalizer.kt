@@ -136,10 +136,19 @@ class MerchantNormalizer @Inject constructor() {
 
         merchant = merchant.trim()
 
-        // Check known merchant mappings
+        // Check known merchant mappings against stripped merchant name
         val lowerMerchant = merchant.lowercase()
         for ((key, value) in KNOWN_MERCHANTS) {
             if (lowerMerchant.contains(key)) {
+                return value
+            }
+        }
+
+        // Also check the original raw input for known merchants
+        // (handles cases like PHONEPE*MERCHANT where the prefix itself identifies the merchant)
+        val lowerRaw = rawMerchant.trim().lowercase()
+        for ((key, value) in KNOWN_MERCHANTS) {
+            if (lowerRaw.contains(key)) {
                 return value
             }
         }
