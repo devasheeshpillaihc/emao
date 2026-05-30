@@ -58,7 +58,7 @@ jobs:
           retention-days: 7
 
   build-release:
-    name: Build Release APK (unsigned)
+    name: Build Signed Release APK
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
 
@@ -76,7 +76,15 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      - name: Build release APK
+      - name: Decode keystore
+        run: echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > ${{ github.workspace }}/keystore.jks
+
+      - name: Build signed release APK
+        env:
+          KEYSTORE_FILE: ${{ github.workspace }}/keystore.jks
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
         run: ./gradlew assembleRelease --no-daemon
 
       - name: Upload release APK
@@ -85,3 +93,7 @@ jobs:
           name: SpendSense-release-apk
           path: app/build/outputs/apk/release/*.apk
           retention-days: 30
+
+      - name: Cleanup keystore
+        if: always()
+        run: rm -f ${{ github.workspace }}/keystore.jks
