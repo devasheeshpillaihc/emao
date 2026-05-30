@@ -93,6 +93,9 @@ dependencies {
     implementation(libs.androidx.material.icons.extended)
     implementation(libs.androidx.animation)
 
+    // Material Components (XML theme support)
+    implementation(libs.material)
+
     // Navigation
     implementation(libs.androidx.navigation.compose)
 
