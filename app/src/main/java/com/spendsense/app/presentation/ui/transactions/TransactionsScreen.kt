@@ -2,6 +2,7 @@ package com.spendsense.app.presentation.ui.transactions
 
 import androidx.compose.animation.*
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
@@ -22,7 +23,7 @@ import com.spendsense.app.presentation.viewmodel.TransactionsViewModel
 import java.text.SimpleDateFormat
 import java.util.*
 
-@OptIn(ExperimentalMaterial3Api::class)
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
 @Composable
 fun TransactionsScreen(
     viewModel: TransactionsViewModel = hiltViewModel(),
@@ -158,7 +159,7 @@ fun TransactionsScreen(
                         ) { transaction ->
                             TransactionCard(
                                 transaction = transaction,
-                                modifier = Modifier.animateItem()
+                                modifier = Modifier.animateItemPlacement()
                             )
                         }
                     }

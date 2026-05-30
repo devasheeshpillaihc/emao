@@ -1,6 +1,7 @@
 package com.spendsense.app.presentation.ui.budgets
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.text.KeyboardOptions
@@ -21,7 +22,7 @@ import com.spendsense.app.presentation.ui.components.*
 import com.spendsense.app.presentation.viewmodel.BudgetViewModel
 import com.spendsense.app.domain.usecase.BudgetAlertType
 
-@OptIn(ExperimentalMaterial3Api::class)
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
 @Composable
 fun BudgetScreen(
     viewModel: BudgetViewModel = hiltViewModel()
@@ -228,7 +229,7 @@ fun BudgetScreen(
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
 @Composable
 private fun AddBudgetSheet(
     onSave: (Category?, Double) -> Unit,

@@ -1,6 +1,6 @@
 package com.spendsense.app.data.repository
 
-import com.spendsense.app.data.db.EntityMappers
+
 import com.spendsense.app.data.db.dao.TransactionDao
 import com.spendsense.app.data.db.dao.MerchantMappingDao
 import com.spendsense.app.data.db.entity.MerchantMappingEntity

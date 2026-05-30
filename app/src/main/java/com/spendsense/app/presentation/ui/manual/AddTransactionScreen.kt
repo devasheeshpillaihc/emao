@@ -1,6 +1,7 @@
 package com.spendsense.app.presentation.ui.manual
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
@@ -20,7 +21,7 @@ import com.spendsense.app.presentation.ui.components.CategoryChip
 import com.spendsense.app.presentation.ui.components.getCategoryIcon
 import com.spendsense.app.presentation.viewmodel.AddTransactionViewModel
 
-@OptIn(ExperimentalMaterial3Api::class)
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
 @Composable
 fun AddTransactionScreen(
     transactionType: String = "expense",
