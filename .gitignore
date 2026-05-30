@@ -7,6 +7,8 @@ local.properties
 
 # Log/OS Files
 *.log
+.DS_Store
+Thumbs.db
 
 # Android Studio generated files and folders
 captures/
@@ -32,3 +34,15 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+# Gradle wrapper JAR (download via wrapper task)
+# Uncomment below if you DON'T want to commit the wrapper jar
+# gradle/wrapper/gradle-wrapper.jar
+
+# Room schema exports (tracked for migration testing)
+# app/schemas/
+
+# Generated files
+.navigation/
+app/release/
+app/debug/

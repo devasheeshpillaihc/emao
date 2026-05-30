@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SpendSense</string>
+    <string name="app_tagline">Smart Expense Tracking</string>
+
+    <!-- Navigation -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_transactions">Transactions</string>
+    <string name="nav_analytics">Analytics</string>
+    <string name="nav_budgets">Budgets</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Dashboard -->
+    <string name="today_spending">Today\'s Spending</string>
+    <string name="weekly_spending">This Week</string>
+    <string name="monthly_spending">This Month</string>
+    <string name="income_vs_expense">Income vs Expense</string>
+    <string name="top_merchants">Top Merchants</string>
+    <string name="recent_transactions">Recent Transactions</string>
+    <string name="savings_estimate">Savings Estimate</string>
+
+    <!-- Categories -->
+    <string name="category_food">Food &amp; Dining</string>
+    <string name="category_groceries">Groceries</string>
+    <string name="category_transport">Transport</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_bills">Bills &amp; Utilities</string>
+    <string name="category_entertainment">Entertainment</string>
+    <string name="category_healthcare">Healthcare</string>
+    <string name="category_education">Education</string>
+    <string name="category_travel">Travel</string>
+    <string name="category_subscriptions">Subscriptions</string>
+    <string name="category_investments">Investments</string>
+    <string name="category_transfers">Transfers</string>
+    <string name="category_other">Other</string>
+    <string name="category_income">Income</string>
+
+    <!-- Add Transaction -->
+    <string name="add_expense">Add Expense</string>
+    <string name="add_income">Add Income</string>
+    <string name="amount_hint">Enter amount</string>
+    <string name="merchant_hint">Merchant / Payee</string>
+    <string name="notes_hint">Add notes…</string>
+    <string name="tags_hint">Add tags (comma separated)</string>
+    <string name="select_category">Select Category</string>
+    <string name="select_date">Select Date</string>
+    <string name="attach_receipt">Attach Receipt</string>
+    <string name="recurring_transaction">Recurring Transaction</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+
+    <!-- Budget -->
+    <string name="set_budget">Set Budget</string>
+    <string name="overall_budget">Overall Monthly Budget</string>
+    <string name="category_budget">Category Budget</string>
+    <string name="budget_remaining">Remaining</string>
+    <string name="budget_exceeded">Budget Exceeded!</string>
+    <string name="budget_warning">Approaching Limit</string>
+
+    <!-- Analytics -->
+    <string name="overview">Overview</string>
+    <string name="category_trends">Category Trends</string>
+    <string name="merchant_trends">Merchant Trends</string>
+    <string name="monthly_trends">Monthly Trends</string>
+
+    <!-- Settings -->
+    <string name="permissions">Permissions</string>
+    <string name="sms_permission">SMS Access</string>
+    <string name="notification_permission">Notification Access</string>
+    <string name="security">Security</string>
+    <string name="biometric_lock">Biometric Lock</string>
+    <string name="app_pin">App PIN</string>
+    <string name="data_management">Data Management</string>
+    <string name="scan_sms">Scan SMS History</string>
+    <string name="export_data">Export Data</string>
+    <string name="export_csv">Export as CSV</string>
+    <string name="export_pdf">Export as PDF Report</string>
+    <string name="appearance">Appearance</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="about">About SpendSense</string>
+    <string name="version">Version</string>
+    <string name="privacy_note">All your data stays on this device. No data is sent to any server.</string>
+
+    <!-- Permissions -->
+    <string name="sms_permission_rationale">SpendSense needs SMS access to automatically detect and track your transactions from bank messages.</string>
+    <string name="notification_permission_rationale">SpendSense needs notification access to track UPI and bank app transaction alerts.</string>
+
+    <!-- Filters -->
+    <string name="filter">Filter</string>
+    <string name="search_transactions">Search transactions…</string>
+    <string name="date_range">Date Range</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="amount_range">Amount Range</string>
+    <string name="clear_filters">Clear Filters</string>
+    <string name="apply_filters">Apply</string>
+
+    <!-- Empty States -->
+    <string name="no_transactions">No transactions yet</string>
+    <string name="no_transactions_desc">Your expenses will appear here once detected from SMS or notifications.</string>
+    <string name="no_budgets">No budgets set</string>
+    <string name="no_budgets_desc">Set monthly budgets to track your spending limits.</string>
+
+    <!-- Transaction Types -->
+    <string name="type_upi">UPI</string>
+    <string name="type_credit_card">Credit Card</string>
+    <string name="type_debit_card">Debit Card</string>
+    <string name="type_bank_transfer">Bank Transfer</string>
+    <string name="type_atm">ATM</string>
+    <string name="type_cash">Cash</string>
+
+    <!-- Misc -->
+    <string name="currency_symbol">₹</string>
+    <string name="all">All</string>
+    <string name="confirm_delete">Are you sure you want to delete this transaction?</string>
+</resources>

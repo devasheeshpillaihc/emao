@@ -1,0 +1,82 @@
+{
+  "notification_samples": [
+    {
+      "package": "com.google.android.apps.nbu.paisa.user",
+      "text": "Paid ₹250 to Swiggy",
+      "expected_amount": 250.0,
+      "expected_direction": "DEBIT",
+      "expected_merchant": "Swiggy"
+    },
+    {
+      "package": "com.google.android.apps.nbu.paisa.user",
+      "text": "Received ₹5,000 from John Doe",
+      "expected_amount": 5000.0,
+      "expected_direction": "CREDIT",
+      "expected_merchant": "John Doe"
+    },
+    {
+      "package": "com.google.android.apps.nbu.paisa.user",
+      "text": "Paid ₹1,500.00 to Amazon. UPI Ref 412345678901",
+      "expected_amount": 1500.0,
+      "expected_direction": "DEBIT",
+      "expected_merchant": "Amazon",
+      "expected_reference": "412345678901"
+    },
+    {
+      "package": "com.phonepe.app",
+      "text": "Paid ₹350 to Uber via PhonePe",
+      "expected_amount": 350.0,
+      "expected_direction": "DEBIT"
+    },
+    {
+      "package": "com.phonepe.app",
+      "text": "Received ₹2,000 from Friend Name",
+      "expected_amount": 2000.0,
+      "expected_direction": "CREDIT"
+    },
+    {
+      "package": "com.phonepe.app",
+      "text": "Sent ₹800 to Merchant successfully",
+      "expected_amount": 800.0,
+      "expected_direction": "DEBIT"
+    },
+    {
+      "package": "net.one97.paytm",
+      "text": "Money sent ₹1,200 to Zomato",
+      "expected_amount": 1200.0,
+      "expected_direction": "DEBIT"
+    },
+    {
+      "package": "net.one97.paytm",
+      "text": "Money received ₹500 from Contact Name",
+      "expected_amount": 500.0,
+      "expected_direction": "CREDIT"
+    },
+    {
+      "package": "com.google.android.apps.nbu.paisa.user",
+      "text": "Paid ₹99 to Netflix",
+      "expected_amount": 99.0,
+      "expected_direction": "DEBIT",
+      "expected_merchant": "Netflix"
+    },
+    {
+      "package": "com.phonepe.app",
+      "text": "Payment of ₹500 to Merchant failed. Please try again.",
+      "expected_amount": 500.0,
+      "expected_status": "FAILED"
+    },
+    {
+      "package": "com.google.android.apps.nbu.paisa.user",
+      "text": "Paid ₹45 to Rapido",
+      "expected_amount": 45.0,
+      "expected_direction": "DEBIT",
+      "expected_merchant": "Rapido"
+    },
+    {
+      "package": "com.phonepe.app",
+      "text": "Paid ₹2,999 to Flipkart",
+      "expected_amount": 2999.0,
+      "expected_direction": "DEBIT"
+    }
+  ]
+}

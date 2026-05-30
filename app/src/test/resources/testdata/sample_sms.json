@@ -1,0 +1,108 @@
+{
+  "sms_samples": [
+    {
+      "sender": "VM-SBIBNK",
+      "body": "Your a/c no. XX1234 is debited for Rs.500.00 on 15-01-24 by a transfer to SWIGGY. Ref No 412345678901. If not done by u, call 1800112211.",
+      "expected_amount": 500.0,
+      "expected_direction": "DEBIT",
+      "expected_merchant": "SWIGGY",
+      "expected_type": "UPI"
+    },
+    {
+      "sender": "VM-SBIBNK",
+      "body": "Your a/c no. XX5678 is credited by Rs.25,000.00 on 15-01-24 by a transfer from ACME CORP (Ref No 345678901234).",
+      "expected_amount": 25000.0,
+      "expected_direction": "CREDIT",
+      "expected_merchant": "ACME CORP"
+    },
+    {
+      "sender": "VM-HDFCBK",
+      "body": "Rs.1,250.00 debited from a/c **1234 on 20-Jan-24 to VPA merchant@ybl (UPI Ref No 412345678901). Avl Bal Rs.45,678.90.",
+      "expected_amount": 1250.0,
+      "expected_direction": "DEBIT",
+      "expected_type": "UPI"
+    },
+    {
+      "sender": "VM-HDFCBK",
+      "body": "Alert: Rs.3,500.00 spent on your HDFC Bank Credit Card ending 9876 at AMAZON on 2024-01-20. Avl limit: Rs.1,50,000.",
+      "expected_amount": 3500.0,
+      "expected_direction": "DEBIT",
+      "expected_type": "CREDIT_CARD"
+    },
+    {
+      "sender": "VM-ICICIB",
+      "body": "Dear Customer, Rs. 750.00 has been debited from your Acct XX4567 on 20-01-24 for UPI/DR/412345678901/Zomato. Your Bal is Rs.12,345.67.",
+      "expected_amount": 750.0,
+      "expected_direction": "DEBIT",
+      "expected_type": "UPI"
+    },
+    {
+      "sender": "VM-ICICIB",
+      "body": "Dear Customer, your Acct XX4567 has been credited with Rs.50,000.00 on 15-01-24. Info: NEFT-SALARY. Avl Bal: Rs.1,50,000.00.",
+      "expected_amount": 50000.0,
+      "expected_direction": "CREDIT",
+      "expected_type": "BANK_TRANSFER"
+    },
+    {
+      "sender": "VM-AXISBK",
+      "body": "INR 2,500.00 debited from A/c no. XX9012 on 20-Jan-24. Info: UPI/412345678901/Payment to Flipkart. Avl bal: INR 35,000.00.",
+      "expected_amount": 2500.0,
+      "expected_direction": "DEBIT",
+      "expected_type": "UPI"
+    },
+    {
+      "sender": "VM-KOTAKB",
+      "body": "Sent Rs.400 from Kotak Bank AC X1234 to uber@axisbank on 20-01-24. UPI Ref 412345678901. Not you? Call 18002740110.",
+      "expected_amount": 400.0,
+      "expected_direction": "DEBIT",
+      "expected_type": "UPI"
+    },
+    {
+      "sender": "VM-HDFCBK",
+      "body": "Dear Customer, your transaction of Rs.1,000.00 has failed. Ref: 123456789. If debited, amount will be reversed within 5 business days.",
+      "expected_amount": 1000.0,
+      "expected_status": "FAILED"
+    },
+    {
+      "sender": "VM-SBIBNK",
+      "body": "Refund of Rs.999.00 has been credited to your a/c XX1234. Ref No: REF123456. -SBI",
+      "expected_amount": 999.0,
+      "expected_direction": "REFUND"
+    },
+    {
+      "sender": "VM-HDFCBK",
+      "body": "Rs.5,000.00 withdrawn from A/c **1234 at ATM on 20-Jan-24. Avl Bal Rs.40,000.00. Not you? Call 18002600.",
+      "expected_amount": 5000.0,
+      "expected_direction": "DEBIT",
+      "expected_type": "ATM"
+    },
+    {
+      "sender": "VM-ICICIB",
+      "body": "ICICI Bank Acct XX1234 credited with Rs.1,00,000.00 on 01-Jan-24 via RTGS from EMPLOYER NAME. Ref: RTGS123456.",
+      "expected_amount": 100000.0,
+      "expected_direction": "CREDIT",
+      "expected_type": "BANK_TRANSFER"
+    },
+    {
+      "sender": "VM-PNBSMS",
+      "body": "Rs.200.00 debited from your PNB a/c XX5678 on 20/01/24 towards UPI txn to PhonePe. Ref:412345678901. Bal:Rs.8,000.00",
+      "expected_amount": 200.0,
+      "expected_direction": "DEBIT",
+      "expected_type": "UPI"
+    },
+    {
+      "sender": "VM-IDFCFB",
+      "body": "Dear Customer, Rs 3,200.00 has been debited from your IDFC FIRST Bank a/c XX3456 towards IMPS transfer. Ref No: IMPS987654321. Avl Bal: Rs 22,345.67",
+      "expected_amount": 3200.0,
+      "expected_direction": "DEBIT",
+      "expected_type": "BANK_TRANSFER"
+    },
+    {
+      "sender": "VM-AXISBK",
+      "body": "Your Axis Bank Debit Card ending 4567 has been used for Rs.1,500.00 at CROMA ELECTRONICS on 20-01-24. Avl Bal: Rs.30,000.00",
+      "expected_amount": 1500.0,
+      "expected_direction": "DEBIT",
+      "expected_type": "DEBIT_CARD"
+    }
+  ]
+}
